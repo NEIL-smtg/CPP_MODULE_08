@@ -1,5 +1,5 @@
-NAME            =       easyfind
-FILES           =       main
+NAME            =       span
+FILES           =       main Span
 SRCS_DIR        =       srcs/
 OBJS_DIR        =       objs/
 SRCS            =       $(addprefix $(SRCS_DIR), $(addsuffix .cpp, $(FILES)))
@@ -29,4 +29,3 @@ re: fclean all
 
 leaks: all
 	valgrind --leak-check=full ./$(NAME)
-	

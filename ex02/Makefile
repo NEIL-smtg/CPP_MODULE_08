@@ -1,4 +1,4 @@
-NAME            =       easyfind
+NAME            =       mutant
 FILES           =       main
 SRCS_DIR        =       srcs/
 OBJS_DIR        =       objs/
@@ -29,4 +29,3 @@ re: fclean all
 
 leaks: all
 	valgrind --leak-check=full ./$(NAME)
-	
