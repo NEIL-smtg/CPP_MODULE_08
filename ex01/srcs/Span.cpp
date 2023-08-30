@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Span.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: suchua < suchua@student.42kl.edu.my>       +#+  +:+       +#+        */
+/*   By: suchua <suchua@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/25 20:13:36 by suchua            #+#    #+#             */
-/*   Updated: 2023/08/25 23:54:27 by suchua           ###   ########.fr       */
+/*   Updated: 2023/08/30 19:25:08 by suchua           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ int	Span::shortestSpan() const
 	if (curr_size <= 1)
 		throw NullSpanException();
 	
-	unsigned int min = longestSpan();
+	int min = longestSpan();
 	std::vector<int>::const_iterator	it;
 	std::vector<int>::const_iterator	it2;
 
